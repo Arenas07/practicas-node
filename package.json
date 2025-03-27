@@ -1,0 +1,13 @@
+{
+  "name": "funciones",
+  "version": "1.0.0",
+  "description": "Imagina que estás organizando una pequeña biblioteca personal. Crea una lista (array) en JavaScript donde guardes al menos cinco nombres de tus libros favoritos. Luego, muestra por consola cuántos libros tienes en total usando una propiedad o método adecuado. Después, imprime cuál es el primer libro de la lista (el que agregaste primero) y cuál es el último. Este ejercicio te ayudará a practicar cómo crear un arreglo, acceder a sus elementos y obtener su longitud.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "json-server server/db.json --watch --port 5600"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

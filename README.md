@@ -1,0 +1,3 @@
+# **1. Crea un catálogo de libros y explora su contenido**
+
+Imagina que estás organizando una pequeña biblioteca personal. Crea una lista (array) en JavaScript donde guardes al menos cinco nombres de tus libros favoritos. Luego, muestra por consola cuántos libros tienes en total usando una propiedad o método adecuado. Después, imprime cuál es el primer libro de la lista (el que agregaste primero) y cuál es el último. Este ejercicio te ayudará a practicar cómo crear un arreglo, acceder a sus elementos y obtener su longitud.
