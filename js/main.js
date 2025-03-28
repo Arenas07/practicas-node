@@ -11,6 +11,7 @@
 //     return result;
 // }
 
+
 // while(confirm("¿Desea actualizar un producto?")){
 //     data = {}
 //     id = prompt("Ingrese el id del producto", "Mic330");
@@ -186,4 +187,45 @@ const editUsers = async(data) =>{
         
     };
     await editProduct(data);
+}
+
+//******************************** */
+
+
+const deleteProduct = async (id) => {
+    const url = new URL("https://67e686946530dbd3111056dc.mockapi.io");
+    url.pathname = `/products/${id}`;
+    
+    const config = {
+        method: "DELETE",
+    };
+        const response = await fetch(url.toString(), config);
+        const result = await response.json();
+        console.log("Producto eliminado:", result);
+        return result;
+};
+while (confirm("¿Desea eliminar un producto?")) {
+    const id = prompt("Ingrese el ID del producto a eliminar");
+    if (id) {
+        await deleteProduct(id);
+    }
+}
+const deleteUser = async (id) => {
+    const url = new URL("https://67e686946530dbd3111056dc.mockapi.io");
+    url.pathname = `/users/${id}`;
+
+    const config = {
+        method: "DELETE",
+    };
+        const response = await fetch(url.toString(), config);
+        const result = await response.json();
+        console.log("Usuario eliminado:", result);
+        return result;
+    } 
+
+while (confirm("¿Desea eliminar un usuario?")) {
+    const id = prompt("Ingrese el ID del usuario a eliminar");
+    if (id) {
+        await deleteUser(id);
+    }
 }
